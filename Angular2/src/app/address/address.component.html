@@ -1,0 +1,10 @@
+<button (click)="display()" id="botao">Abrir novo endereço</button>
+
+<div id="formAddress{{nome}}">
+  <label>Novo endereço:</label>
+  <p>Local: <input ref-address type="text" ngModel="address"></p>
+  <p>Cidade: <input ref-city type="text" ngModel="city"></p>
+  <p>País: <input ref-country type="text" ngModel="country"></p>
+</div>
+
+<button (click)="atualizar(address.value, city.value, country.value )">Confirmar</button>

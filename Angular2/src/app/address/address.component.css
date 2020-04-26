@@ -1,0 +1,7 @@
+#formAddress {
+  display: none;
+}
+
+#formAddress.visible {
+  display: block;
+}
